@@ -1,9 +1,11 @@
 description: Income tax rates by bracket
 reference:
-  - title: Tax rates for individuals
+  - title: Income Tax Act 2007 - Schedule 1
+    href: https://www.legislation.govt.nz/act/public/2007/0097/latest/DLM1517476.html
+  - title: Taxation (Budget Measures) Act 2024
+    href: https://www.legislation.govt.nz/act/public/2024/0018/latest/whole.html
+  - title: Tax rates for individuals (IRD)
     href: https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals
-  - title: Income tax changes 2025
-    href: https://www.ird.govt.nz/about-us/videos/webinars/april-release/income-tax-changes-2025
 metadata:
   unit: /1
   label: Income tax rates

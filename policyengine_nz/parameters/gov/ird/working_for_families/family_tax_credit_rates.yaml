@@ -1,9 +1,11 @@
 description: Family Tax Credit rates per child by age
 reference:
-  - title: Family Tax Credit
+  - title: Income Tax Act 2007 - Subpart MD
+    href: https://www.legislation.govt.nz/act/public/2007/0097/latest/DLM1518553.html
+  - title: Income Tax (Working for Families) Regulations 2004
+    href: https://www.legislation.govt.nz/regulation/public/2004/0052/latest/DLM239105.html
+  - title: Family Tax Credit (IRD)
     href: https://www.ird.govt.nz/working-for-families/types/family-tax-credit
-  - title: Working for Families payments
-    href: https://www.govt.nz/browse/family-and-whanau/financial-help-for-your-family/working-for-families-payments/
 metadata:
   unit: currency-NZD
   label: Family Tax Credit rates (per year)

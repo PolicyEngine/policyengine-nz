@@ -1,9 +1,11 @@
 description: ACC Earner's Levy rate on employment income
 reference:
-  - title: ACC Earner's Levy
+  - title: Accident Compensation Act 2001 - Section 218
+    href: https://www.legislation.govt.nz/act/public/2001/0049/latest/DLM103421.html
+  - title: Accident Compensation (Earners' Levy) Regulations 2024
+    href: https://www.legislation.govt.nz/regulation/public/2024/0039/latest/whole.html
+  - title: ACC Earner's Levy (ACC website)
     href: https://www.acc.co.nz/for-business/acclevy/
-  - title: IRD - ACC Earner's Levy
-    href: https://www.ird.govt.nz/roles/employers/paye-and-deductions/deductions/acc-earners-levy
 metadata:
   unit: /1
   label: ACC Earner's Levy rate

@@ -1,7 +1,9 @@
 description: Income tax thresholds by bracket
 reference:
-  - title: Tax rates for individuals
-    href: https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals
+  - title: Income Tax Act 2007 - Schedule 1
+    href: https://www.legislation.govt.nz/act/public/2007/0097/latest/DLM1517476.html
+  - title: Taxation (Budget Measures) Act 2024
+    href: https://www.legislation.govt.nz/act/public/2024/0018/latest/whole.html
 metadata:
   unit: currency-NZD
   label: Income tax thresholds
