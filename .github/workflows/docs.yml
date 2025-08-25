@@ -37,7 +37,7 @@ jobs:
       
       - name: Build documentation with MyST
         run: |
-          myst build docs -o docs/_build
+          uv run myst build docs -o docs/_build
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
