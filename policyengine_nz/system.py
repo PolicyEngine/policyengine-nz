@@ -51,14 +51,6 @@ class NewZealandTaxBenefitSystem(TaxBenefitSystem):
         """
         super().__init__(entities)
         
-        # Add all parameters
-        if self.parameters_dir is not None and self.parameters_dir.exists():
-            self.load_parameters(self.parameters_dir)
-        
-        # Add all variables
-        if self.variables_dir is not None and self.variables_dir.exists():
-            self.add_variables_from_directory(self.variables_dir)
-        
         # Apply reform if provided
         if reform is not None:
             self.apply_reform(reform)

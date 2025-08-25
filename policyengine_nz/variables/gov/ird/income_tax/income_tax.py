@@ -56,7 +56,7 @@ class income_tax(Variable):
                                    bracket_4_end - bracket_4_start)
             tax += bracket_4_income * bracket_4_rate
         
-        # Bracket 5: 33% on income from $70,001/$180,001 and above
+        # Bracket 5: 39% on income from $180,001 and above
         bracket_5_start = thresholds.bracket_5
         bracket_5_rate = rates.bracket_5
         
