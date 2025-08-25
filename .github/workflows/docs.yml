@@ -37,7 +37,12 @@ jobs:
       
       - name: Build documentation with MyST
         run: |
-          cd docs && uv run myst build --html
+          cd docs
+          uv run myst build --html
+          # Add .nojekyll to prevent Jekyll processing
+          touch _build/html/.nojekyll
+          # Kill any remaining MyST server processes
+          pkill -f "myst" || true
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
