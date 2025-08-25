@@ -11,11 +11,11 @@ class taxable_income(Variable):
     documentation = "Total taxable income for New Zealand income tax purposes"
     reference = "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/working-out-your-income-tax"
     unit = NZD
-    
+
     def formula(person, period, parameters):
         return (
-            person("employment_income", period) +
-            person("self_employment_income", period) +
-            person("investment_income", period)
+            person("employment_income", period)
+            + person("self_employment_income", period)
+            + person("investment_income", period)
             # Additional income sources can be added here
         )

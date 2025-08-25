@@ -10,7 +10,7 @@ class is_child(Variable):
     label = "Is child"
     documentation = "Whether person is considered a dependent child"
     reference = "https://www.ird.govt.nz/working-for-families/eligibility"
-    
+
     def formula(person, period, parameters):
         age = person("age", period)
         return age < 18

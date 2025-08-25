@@ -8,6 +8,8 @@ class self_employment_income(Variable):
     entity = Person
     definition_period = YEAR
     label = "Self-employment income"
-    documentation = "Income from self-employment, business, and sole trader activities"
+    documentation = (
+        "Income from self-employment, business, and sole trader activities"
+    )
     reference = "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/types-of-income/self-employed-income"
     unit = NZD

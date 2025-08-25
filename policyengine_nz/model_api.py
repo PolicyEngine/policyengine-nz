@@ -8,10 +8,17 @@ This module exposes commonly used functions and classes for variable and paramet
 from policyengine_core.variables import Variable
 from policyengine_core.parameters import ParameterNode
 from policyengine_core.periods import (
-    DAY, MONTH, YEAR, ETERNITY, 
-    Period, period
+    DAY,
+    MONTH,
+    YEAR,
+    ETERNITY,
+    Period,
+    period,
 )
-from policyengine_core.holders import set_input_divide_by_period, set_input_dispatch_by_period
+from policyengine_core.holders import (
+    set_input_divide_by_period,
+    set_input_dispatch_by_period,
+)
 from policyengine_core.enums import Enum
 from policyengine_core.reforms import Reform
 from policyengine_core.data_storage import in_memory_storage

@@ -17,19 +17,19 @@ COUNTRY_DIR = Path(__file__).parent
 class NewZealandTaxBenefitSystem(TaxBenefitSystem):
     """
     The New Zealand tax and benefit system.
-    
+
     This class represents the complete New Zealand tax and benefit system,
     including income tax, GST, ACC, Working for Families, benefits,
     and other social assistance programs.
     """
-    
+
     entities = entities
     parameters_dir = COUNTRY_DIR / "parameters"
     variables_dir = COUNTRY_DIR / "variables"
     auto_carry_over_input_variables = True
     basic_inputs = [
         "age",
-        "employment_income", 
+        "employment_income",
         "self_employment_income",
         "investment_income",
         "rental_income",
@@ -41,20 +41,20 @@ class NewZealandTaxBenefitSystem(TaxBenefitSystem):
         "region",
         "accommodation_costs",
     ]
-    
+
     def __init__(self, reform=None):
         """
         Initialize the New Zealand tax-benefit system.
-        
+
         Args:
             reform: Optional reform to apply to the baseline system
         """
         super().__init__(entities)
-        
+
         # Apply reform if provided
         if reform is not None:
             self.apply_reform(reform)
-    
+
     # Entity properties are handled by parent class
 
 

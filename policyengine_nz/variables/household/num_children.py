@@ -10,6 +10,6 @@ class num_children(Variable):
     label = "Number of children"
     documentation = "Number of dependent children in the family"
     reference = "https://www.ird.govt.nz/working-for-families/eligibility"
-    
+
     def formula(family, period, parameters):
         return family.sum(family.members("is_child", period))
