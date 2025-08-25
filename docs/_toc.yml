@@ -1,0 +1,4 @@
+format: jb-book
+chapters:
+- file: index
+- file: installation
