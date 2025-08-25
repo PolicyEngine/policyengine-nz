@@ -1,0 +1,59 @@
+description: Jobseeker Support payment rates
+reference:
+  - title: Jobseeker Support
+    href: https://www.workandincome.govt.nz/products/a-z-benefits/jobseeker-support.html
+  - title: Benefit rates from 1 April 2025
+    href: https://www.workandincome.govt.nz/products/benefit-rates/benefit-rates-april-2025.html
+metadata:
+  label: Jobseeker Support payment rates
+rates:
+  single_18_24:
+    description: Weekly rate for single person aged 18-24
+    metadata:
+      unit: currency-NZD
+      label: Single 18-24 weekly rate
+    values:
+      2022-04-01: 250.74
+      2023-04-01: 261.21
+      2024-04-01: 277.37
+      2025-04-01: 297.37  # Estimated increase
+  single_25_plus:
+    description: Weekly rate for single person aged 25 and over
+    metadata:
+      unit: currency-NZD
+      label: Single 25+ weekly rate  
+    values:
+      2022-04-01: 315.93
+      2023-04-01: 329.17
+      2024-04-01: 349.66
+      2025-04-01: 374.66  # Estimated increase
+  couple_both_eligible:
+    description: Weekly rate for couples (both eligible)
+    metadata:
+      unit: currency-NZD
+      label: Couple both eligible weekly rate
+    values:
+      2022-04-01: 525.82
+      2023-04-01: 547.87
+      2024-04-01: 582.03
+      2025-04-01: 624.03  # Estimated increase
+  couple_one_eligible:
+    description: Weekly rate for couples (one eligible)
+    metadata:
+      unit: currency-NZD
+      label: Couple one eligible weekly rate
+    values:
+      2022-04-01: 262.91
+      2023-04-01: 273.94
+      2024-04-01: 291.01
+      2025-04-01: 312.01  # Estimated increase
+  sole_parent:
+    description: Weekly rate for sole parents
+    metadata:
+      unit: currency-NZD
+      label: Sole parent weekly rate
+    values:
+      2022-04-01: 434.16
+      2023-04-01: 452.37
+      2024-04-01: 480.74
+      2025-04-01: 515.74  # Estimated increase

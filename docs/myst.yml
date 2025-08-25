@@ -1,0 +1,35 @@
+version: 1
+project:
+  title: PolicyEngine New Zealand
+  description: Microsimulation model for New Zealand's tax and benefit system
+  keywords: 
+    - tax
+    - policy
+    - microsimulation
+    - new zealand
+    - benefits
+  github: https://github.com/PolicyEngine/policyengine-nz
+  license: AGPL-3.0
+  subject: Social Policy
+
+site:
+  title: PolicyEngine New Zealand
+  nav:
+    - title: Home
+      url: /
+    - title: Installation
+      url: /installation
+    - title: Quickstart  
+      url: /quickstart
+    - title: Tax Programs
+      url: /tax-programs
+    - title: Benefit Programs
+      url: /benefit-programs
+    - title: Developer Guide
+      url: /developer-guide
+    - title: API Reference
+      url: /api_reference
+
+  actions:
+    - title: View on GitHub
+      url: https://github.com/PolicyEngine/policyengine-nz

@@ -1,0 +1,77 @@
+description: New Zealand Superannuation payment rates
+reference:
+  - title: New Zealand Superannuation
+    href: https://www.workandincome.govt.nz/products/a-z-benefits/nz-superannuation.html
+  - title: Benefit rates from 1 April 2025
+    href: https://www.workandincome.govt.nz/products/benefit-rates/benefit-rates-april-2025.html
+metadata:
+  label: New Zealand Superannuation payment rates
+rates:
+  single_living_alone:
+    description: Weekly rate for single person living alone
+    metadata:
+      unit: currency-NZD
+      label: Single living alone weekly rate
+    values:
+      2022-04-01: 462.94
+      2023-04-01: 482.38
+      2024-04-01: 512.66
+      2025-04-01: 549.66  # Estimated increase
+  single_sharing:
+    description: Weekly rate for single person sharing accommodation
+    metadata:
+      unit: currency-NZD
+      label: Single sharing weekly rate
+    values:
+      2022-04-01: 426.13
+      2023-04-01: 443.99
+      2024-04-01: 471.80
+      2025-04-01: 506.80  # Estimated increase
+  couple_combined:
+    description: Combined weekly rate for married/civil union/de facto couple
+    metadata:
+      unit: currency-NZD
+      label: Couple combined weekly rate
+    values:
+      2022-04-01: 712.68
+      2023-04-01: 742.52
+      2024-04-01: 789.04
+      2025-04-01: 846.04  # Estimated increase
+  couple_each:
+    description: Weekly rate for each person in a couple
+    metadata:
+      unit: currency-NZD
+      label: Couple each weekly rate
+    values:
+      2022-04-01: 356.34
+      2023-04-01: 371.26
+      2024-04-01: 394.52
+      2025-04-01: 423.02  # Estimated increase
+eligibility:
+  age_threshold:
+    description: Minimum age for New Zealand Superannuation eligibility
+    metadata:
+      unit: years
+    values:
+      2022-04-01: 65
+      2023-04-01: 65
+      2024-04-01: 65
+      2025-04-01: 65
+  residency_years:
+    description: Minimum years of NZ residence required
+    metadata:
+      unit: years
+    values:
+      2022-04-01: 10
+      2023-04-01: 10
+      2024-04-01: 10
+      2025-04-01: 10
+  residency_years_after_50:
+    description: Minimum years of NZ residence required after age 50
+    metadata:
+      unit: years
+    values:
+      2022-04-01: 5
+      2023-04-01: 5
+      2024-04-01: 5
+      2025-04-01: 5

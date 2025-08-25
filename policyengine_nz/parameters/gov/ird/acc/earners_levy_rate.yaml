@@ -1,0 +1,14 @@
+description: ACC Earner's Levy rate on employment income
+reference:
+  - title: ACC Earner's Levy
+    href: https://www.acc.co.nz/for-business/acclevy/
+  - title: IRD - ACC Earner's Levy
+    href: https://www.ird.govt.nz/roles/employers/paye-and-deductions/deductions/acc-earners-levy
+metadata:
+  unit: /1
+  label: ACC Earner's Levy rate
+values:
+  2022-04-01: 0.0127  # 1.27%
+  2023-04-01: 0.0139  # 1.39%
+  2024-04-01: 0.0167  # 1.67%
+  2025-04-01: 0.0167  # Estimated to remain at 1.67%

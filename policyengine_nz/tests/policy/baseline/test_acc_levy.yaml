@@ -1,0 +1,32 @@
+- name: ACC Earner's Levy on $30,000 employment income (2025)
+  period: 2025
+  input:
+    people:
+      person:
+        age: 30
+        employment_income: 30000
+  output:
+    acc_earners_levy:
+      2025: 501  # $30,000 * 1.67% = $501
+
+- name: ACC Earner's Levy on $60,000 employment income (2025)
+  period: 2025
+  input:
+    people:
+      person:
+        age: 30
+        employment_income: 60000
+  output:
+    acc_earners_levy:
+      2025: 1002  # $60,000 * 1.67% = $1,002
+
+- name: ACC Earner's Levy on $200,000 employment income (capped at $154,548)
+  period: 2025
+  input:
+    people:
+      person:
+        age: 30
+        employment_income: 200000
+  output:
+    acc_earners_levy:
+      2025: 2580.95  # $154,548 * 1.67% = $2,580.95 (capped)

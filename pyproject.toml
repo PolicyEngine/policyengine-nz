@@ -1,0 +1,98 @@
+[build-system]
+requires = ["hatchling>=1.21.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "policyengine-nz"
+version = "0.1.0"
+description = "PolicyEngine's microsimulation model for New Zealand's tax and benefit system"
+readme = "README.md"
+license = {text = "AGPL-3.0"}
+authors = [
+    {name = "PolicyEngine", email = "hello@policyengine.org"},
+]
+keywords = [
+    "tax",
+    "benefit", 
+    "policy",
+    "microsimulation",
+    "new zealand",
+    "aotearoa",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "policyengine-core>=3.19.0",
+    "microdf-python>=1.0.0",
+    "tqdm>=4.67.1",
+    "pandas>=2.2.3",
+    "numpy>=1.24.2",
+    "requests>=2.27.1",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+    "black>=24.8.0",
+    "linecheck>=0.1.4",
+    "jupyter-book>=1.0.4",
+    "wheel>=0.38.4",
+    "build>=0.8.0",
+    "setuptools>=61.0",
+    "plotly>=5.19.0",
+    "ipykernel>=6.29.5",
+    "ipywidgets>=8.1.5",
+]
+
+[project.urls]
+Homepage = "https://policyengine.org"
+Repository = "https://github.com/PolicyEngine/policyengine-nz"
+Documentation = "https://policyengine.org/nz/api"
+Tracker = "https://github.com/PolicyEngine/policyengine-nz/issues"
+
+[tool.black]
+line-length = 79
+target-version = ["py310", "py311", "py312", "py313"]
+
+[tool.pytest.ini_options]
+testpaths = ["policyengine_nz/tests"]
+python_files = ["*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[tool.coverage.run]
+source = ["policyengine_nz"]
+omit = ["*/tests/*"]
+
+[tool.coverage.report]
+precision = 2
+skip_covered = false
+show_missing = true
+
+[tool.hatch.build]
+include = [
+    "policyengine_nz/**",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+]
+exclude = [
+    "**/__pycache__",
+    "**/*.pyc",
+    "**/*.pyo",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+]

@@ -1,0 +1,24 @@
+description: Family Tax Credit rates per child by age
+reference:
+  - title: Family Tax Credit
+    href: https://www.ird.govt.nz/working-for-families/types/family-tax-credit
+  - title: Working for Families payments
+    href: https://www.govt.nz/browse/family-and-whanau/financial-help-for-your-family/working-for-families-payments/
+metadata:
+  unit: currency-NZD
+  label: Family Tax Credit rates (per year)
+rates:
+  child_0_15:
+    description: Annual FTC rate for children aged 0-15
+    values:
+      2022-04-01: 5890  # $113.27 per week
+      2023-04-01: 6176  # $118.77 per week  
+      2024-04-01: 6552  # $126 per week
+      2025-04-01: 6552  # Estimated to remain same
+  child_16_18:
+    description: Annual FTC rate for children aged 16-18
+    values:
+      2022-04-01: 7540  # $145 per week
+      2023-04-01: 7904  # $152 per week
+      2024-04-01: 8372  # $161 per week
+      2025-04-01: 8372  # Estimated to remain same

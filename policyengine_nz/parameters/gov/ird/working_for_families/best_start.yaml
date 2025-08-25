@@ -1,0 +1,66 @@
+description: Best Start Tax Credit parameters
+reference:
+  - title: Best Start Tax Credit
+    href: https://www.ird.govt.nz/working-for-families/types/best-start
+  - title: Working for Families payments
+    href: https://www.govt.nz/browse/family-and-whanau/financial-help-for-your-family/working-for-families-payments/
+metadata:
+  label: Best Start Tax Credit parameters
+rates:
+  weekly_rate:
+    description: Best Start weekly payment per child
+    metadata:
+      unit: currency-NZD
+      label: Best Start weekly rate
+    values:
+      2022-04-01: 65    # $65 per week
+      2023-04-01: 68    # $68 per week
+      2024-04-01: 73    # $73 per week (up to $3,796 per year)
+      2025-04-01: 73    # Estimated to remain same
+eligibility:
+  birth_cutoff:
+    description: Children born on or after this date are eligible
+    metadata:
+      unit: date
+    values:
+      2022-04-01: "2018-07-01"
+      2023-04-01: "2018-07-01"
+      2024-04-01: "2018-07-01"
+      2025-04-01: "2018-07-01"
+  max_age_months:
+    description: Maximum age in months for Best Start eligibility
+    metadata:
+      unit: months
+    values:
+      2022-04-01: 36  # Up to 3 years old
+      2023-04-01: 36
+      2024-04-01: 36
+      2025-04-01: 36
+income_test:
+  year_1_threshold:
+    description: Income threshold for first year (no income test)
+    metadata:
+      unit: currency-NZD
+    values:
+      2022-04-01: 999999999  # No income test in first year
+      2023-04-01: 999999999
+      2024-04-01: 999999999
+      2025-04-01: 999999999
+  years_2_3_threshold:
+    description: Income threshold for years 2 and 3
+    metadata:
+      unit: currency-NZD
+    values:
+      2022-04-01: 79000   # $79,000 threshold
+      2023-04-01: 79000
+      2024-04-01: 96295   # Increased threshold
+      2025-04-01: 96295
+  abatement_rate:
+    description: Rate at which Best Start is reduced above threshold (years 2-3)
+    metadata:
+      unit: /1
+    values:
+      2022-04-01: 0.21  # 21% abatement rate
+      2023-04-01: 0.21
+      2024-04-01: 0.21
+      2025-04-01: 0.21

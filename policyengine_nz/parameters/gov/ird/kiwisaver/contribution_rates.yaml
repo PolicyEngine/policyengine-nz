@@ -1,0 +1,65 @@
+description: KiwiSaver contribution rates for employees and employers
+reference:
+  - title: KiwiSaver contribution rates
+    href: https://www.ird.govt.nz/kiwisaver/kiwisaver-deductions/kiwisaver-deduction-rates
+  - title: KiwiSaver overview
+    href: https://www.kiwisaver.govt.nz/new/contributions/contribution-rates/
+metadata:
+  label: KiwiSaver contribution rates
+rates:
+  employee_minimum:
+    description: Minimum employee contribution rate
+    metadata:
+      unit: /1
+      label: Employee minimum contribution rate
+    values:
+      2022-04-01: 0.03  # 3%
+      2023-04-01: 0.03
+      2024-04-01: 0.03
+      2025-04-01: 0.03
+  employee_options:
+    description: Available employee contribution rate options
+    4_percent:
+      values:
+        2022-04-01: 0.04  # 4%
+        2023-04-01: 0.04
+        2024-04-01: 0.04
+        2025-04-01: 0.04
+    6_percent:
+      values:
+        2022-04-01: 0.06  # 6%
+        2023-04-01: 0.06
+        2024-04-01: 0.06
+        2025-04-01: 0.06
+    8_percent:
+      values:
+        2022-04-01: 0.08  # 8%
+        2023-04-01: 0.08
+        2024-04-01: 0.08
+        2025-04-01: 0.08
+    10_percent:
+      values:
+        2022-04-01: 0.10  # 10%
+        2023-04-01: 0.10
+        2024-04-01: 0.10
+        2025-04-01: 0.10
+  employer_minimum:
+    description: Minimum employer contribution rate
+    metadata:
+      unit: /1
+      label: Employer minimum contribution rate
+    values:
+      2022-04-01: 0.03  # 3%
+      2023-04-01: 0.03
+      2024-04-01: 0.03
+      2025-04-01: 0.03
+  government_contribution:
+    description: Annual government contribution (Member Tax Credit)
+    metadata:
+      unit: currency-NZD
+      label: Maximum annual government contribution
+    values:
+      2022-04-01: 521.43  # Maximum annual Member Tax Credit
+      2023-04-01: 521.43
+      2024-04-01: 521.43
+      2025-04-01: 521.43

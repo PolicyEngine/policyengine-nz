@@ -1,0 +1,125 @@
+description: Accommodation Supplement payment rates by region and family size
+reference:
+  - title: Accommodation Supplement
+    href: https://www.workandincome.govt.nz/products/a-z-benefits/accommodation-supplement.html
+  - title: Accommodation Supplement rates
+    href: https://www.workandincome.govt.nz/products/benefit-rates/accommodation-supplement-rates.html
+metadata:
+  label: Accommodation Supplement payment rates
+rates:
+  area_1:
+    description: Area 1 - Auckland (highest cost area)
+    metadata:
+      unit: currency-NZD
+      label: Area 1 maximum weekly rates
+    single:
+      values:
+        2022-04-01: 175
+        2023-04-01: 185
+        2024-04-01: 195
+        2025-04-01: 205  # Estimated
+    couple:
+      values:
+        2022-04-01: 175
+        2023-04-01: 185
+        2024-04-01: 195
+        2025-04-01: 205  # Estimated
+    family_1_child:
+      values:
+        2022-04-01: 235
+        2023-04-01: 245
+        2024-04-01: 255
+        2025-04-01: 265  # Estimated
+    family_2_plus_children:
+      values:
+        2022-04-01: 295
+        2023-04-01: 305
+        2024-04-01: 315
+        2025-04-01: 325  # Estimated
+  area_2:
+    description: Area 2 - Wellington, Hamilton, Tauranga (medium cost areas)
+    metadata:
+      unit: currency-NZD
+      label: Area 2 maximum weekly rates
+    single:
+      values:
+        2022-04-01: 155
+        2023-04-01: 165
+        2024-04-01: 175
+        2025-04-01: 185  # Estimated
+    couple:
+      values:
+        2022-04-01: 155
+        2023-04-01: 165
+        2024-04-01: 175
+        2025-04-01: 185  # Estimated
+    family_1_child:
+      values:
+        2022-04-01: 215
+        2023-04-01: 225
+        2024-04-01: 235
+        2025-04-01: 245  # Estimated
+    family_2_plus_children:
+      values:
+        2022-04-01: 275
+        2023-04-01: 285
+        2024-04-01: 295
+        2025-04-01: 305  # Estimated
+  area_3:
+    description: Area 3 - Christchurch and other urban areas
+    metadata:
+      unit: currency-NZD
+      label: Area 3 maximum weekly rates
+    single:
+      values:
+        2022-04-01: 135
+        2023-04-01: 145
+        2024-04-01: 155
+        2025-04-01: 165  # Estimated
+    couple:
+      values:
+        2022-04-01: 135
+        2023-04-01: 145
+        2024-04-01: 155
+        2025-04-01: 165  # Estimated
+    family_1_child:
+      values:
+        2022-04-01: 195
+        2023-04-01: 205
+        2024-04-01: 215
+        2025-04-01: 225  # Estimated
+    family_2_plus_children:
+      values:
+        2022-04-01: 255
+        2023-04-01: 265
+        2024-04-01: 275
+        2025-04-01: 285  # Estimated
+  area_4:
+    description: Area 4 - Provincial and rural areas (lowest cost)
+    metadata:
+      unit: currency-NZD
+      label: Area 4 maximum weekly rates
+    single:
+      values:
+        2022-04-01: 115
+        2023-04-01: 125
+        2024-04-01: 135
+        2025-04-01: 145  # Estimated
+    couple:
+      values:
+        2022-04-01: 115
+        2023-04-01: 125
+        2024-04-01: 135
+        2025-04-01: 145  # Estimated
+    family_1_child:
+      values:
+        2022-04-01: 175
+        2023-04-01: 185
+        2024-04-01: 195
+        2025-04-01: 205  # Estimated
+    family_2_plus_children:
+      values:
+        2022-04-01: 235
+        2023-04-01: 245
+        2024-04-01: 255
+        2025-04-01: 265  # Estimated

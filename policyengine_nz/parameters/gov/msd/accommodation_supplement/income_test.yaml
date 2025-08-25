@@ -1,0 +1,43 @@
+description: Accommodation Supplement income thresholds and abatement
+reference:
+  - title: Accommodation Supplement
+    href: https://www.workandincome.govt.nz/products/a-z-benefits/accommodation-supplement.html
+metadata:
+  label: Accommodation Supplement income test
+thresholds:
+  cash_assets_limit_single:
+    description: Cash assets limit for single people
+    metadata:
+      unit: currency-NZD
+    values:
+      2022-04-01: 8600
+      2023-04-01: 8600
+      2024-04-01: 8600
+      2025-04-01: 8600
+  cash_assets_limit_couple:
+    description: Cash assets limit for couples
+    metadata:
+      unit: currency-NZD
+    values:
+      2022-04-01: 13050
+      2023-04-01: 13050
+      2024-04-01: 13050
+      2025-04-01: 13050
+  minimum_accommodation_cost:
+    description: Minimum weekly accommodation cost to qualify
+    metadata:
+      unit: currency-NZD
+    values:
+      2022-04-01: 25
+      2023-04-01: 25
+      2024-04-01: 25
+      2025-04-01: 25
+  contribution_rate:
+    description: Percentage of accommodation costs above minimum that person must pay
+    metadata:
+      unit: /1
+    values:
+      2022-04-01: 0.30  # Person pays 30% of costs above $25
+      2023-04-01: 0.30
+      2024-04-01: 0.30
+      2025-04-01: 0.30

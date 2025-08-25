@@ -1,0 +1,68 @@
+description: Income tax rates by bracket
+reference:
+  - title: Tax rates for individuals
+    href: https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals
+  - title: Income tax changes 2025
+    href: https://www.ird.govt.nz/about-us/videos/webinars/april-release/income-tax-changes-2025
+metadata:
+  unit: /1
+  label: Income tax rates
+rates:
+  bracket_1:
+    description: Tax rate for income up to tax-free threshold
+    values:
+      2022-04-01: 0.0
+      2023-04-01: 0.0
+      2024-04-01: 0.0
+      2024-07-31: 0.0
+      2025-04-01: 0.0
+  bracket_2:
+    description: Tax rate for income $14,001/$15,601 to $48,000/$53,500
+    values:
+      2022-04-01: 0.105  # 10.5%
+      2023-04-01: 0.105
+      2024-04-01: 0.105
+      # Composite rate for 2025 tax year due to mid-year change
+      2025-04-01: 0.105  # Becomes 10.5% for full 2026 tax year
+  bracket_2_composite:
+    description: Composite rate for partial 2025 tax year (for $14,001 to $15,600)
+    values:
+      2025-04-01: 0.1282  # 12.82% composite rate
+  bracket_3:
+    description: Tax rate for income $48,001/$53,501 to $70,000/$78,100
+    values:
+      2022-04-01: 0.175  # 17.5%
+      2023-04-01: 0.175
+      2024-04-01: 0.175
+      2025-04-01: 0.175  # Becomes 17.5% for full 2026 tax year
+  bracket_3_composite:
+    description: Composite rate for partial 2025 tax year (for $48,001 to $53,500)
+    values:
+      2025-04-01: 0.2164  # 21.64% composite rate
+  bracket_4:
+    description: Tax rate for income $70,001/$78,101 to $180,000
+    values:
+      2022-04-01: 0.30  # 30%
+      2023-04-01: 0.30
+      2024-04-01: 0.30
+      2025-04-01: 0.30  # Becomes 30% for full 2026 tax year
+  bracket_4_composite:
+    description: Composite rate for partial 2025 tax year (for $70,001 to $78,100)
+    values:
+      2025-04-01: 0.3099  # 30.99% composite rate
+  bracket_5:
+    description: Tax rate for income $180,001 and above
+    values:
+      2022-04-01: 0.33  # 33%
+      2023-04-01: 0.33
+      2024-04-01: 0.33
+      2024-07-31: 0.33
+      2025-04-01: 0.33
+  bracket_6:
+    description: Tax rate for income above $180,000 (highest earners)
+    values:
+      2022-04-01: 0.39  # 39%
+      2023-04-01: 0.39
+      2024-04-01: 0.39
+      2024-07-31: 0.39
+      2025-04-01: 0.39

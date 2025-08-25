@@ -1,0 +1,14 @@
+description: Goods and Services Tax (GST) rate
+reference:
+  - title: GST rates and changes
+    href: https://www.ird.govt.nz/gst/gst-rates-and-changes
+  - title: GST overview
+    href: https://www.ird.govt.nz/gst
+metadata:
+  unit: /1
+  label: GST rate
+values:
+  2022-04-01: 0.15  # 15%
+  2023-04-01: 0.15
+  2024-04-01: 0.15
+  2025-04-01: 0.15

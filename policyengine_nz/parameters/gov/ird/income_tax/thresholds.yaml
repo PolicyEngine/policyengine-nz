@@ -1,0 +1,48 @@
+description: Income tax thresholds by bracket
+reference:
+  - title: Tax rates for individuals
+    href: https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals
+metadata:
+  unit: currency-NZD
+  label: Income tax thresholds
+thresholds:
+  tax_free_threshold:
+    description: Tax-free threshold (up to this amount no tax is paid)
+    values:
+      2022-04-01: 0
+      2023-04-01: 0
+      2024-04-01: 0
+      2024-07-31: 0  # Mid-year change
+      2025-04-01: 0
+  bracket_2:
+    description: Threshold for second tax bracket (10.5%/composite rate)
+    values:
+      2022-04-01: 14000
+      2023-04-01: 14000
+      2024-04-01: 14000
+      2024-07-31: 15600  # Adjusted threshold from 31 July 2024
+      2025-04-01: 15600
+  bracket_3:
+    description: Threshold for third tax bracket (17.5%)
+    values:
+      2022-04-01: 48000
+      2023-04-01: 48000
+      2024-04-01: 48000
+      2024-07-31: 53500  # Adjusted threshold from 31 July 2024
+      2025-04-01: 53500
+  bracket_4:
+    description: Threshold for fourth tax bracket (30%)
+    values:
+      2022-04-01: 70000
+      2023-04-01: 70000
+      2024-04-01: 70000
+      2024-07-31: 78100  # Adjusted threshold from 31 July 2024
+      2025-04-01: 78100
+  bracket_5:
+    description: Threshold for fifth tax bracket (33%)
+    values:
+      2022-04-01: 180000
+      2023-04-01: 180000
+      2024-04-01: 180000
+      2024-07-31: 180000  # No change
+      2025-04-01: 180000

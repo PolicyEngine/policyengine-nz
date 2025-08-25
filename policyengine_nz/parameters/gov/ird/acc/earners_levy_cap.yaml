@@ -1,0 +1,14 @@
+description: Maximum income subject to ACC Earner's Levy
+reference:
+  - title: ACC Earner's Levy
+    href: https://www.acc.co.nz/for-business/acclevy/
+  - title: IRD - ACC Earner's Levy
+    href: https://www.ird.govt.nz/roles/employers/paye-and-deductions/deductions/acc-earners-levy
+metadata:
+  unit: currency-NZD
+  label: ACC Earner's Levy maximum income cap
+values:
+  2022-04-01: 139384  # Annual cap
+  2023-04-01: 142283  # Annual cap  
+  2024-04-01: 147756  # Annual cap
+  2025-04-01: 154548  # Estimated annual cap

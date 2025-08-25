@@ -1,0 +1,27 @@
+description: Family Tax Credit income thresholds and abatement rates
+reference:
+  - title: Family Tax Credit
+    href: https://www.ird.govt.nz/working-for-families/types/family-tax-credit
+  - title: Working for Families income test
+    href: https://www.ird.govt.nz/working-for-families/eligibility/income-test
+metadata:
+  label: Family Tax Credit income test parameters
+thresholds:
+  full_payment_threshold:
+    description: Family income threshold below which full FTC is paid
+    metadata:
+      unit: currency-NZD
+    values:
+      2022-04-01: 42700
+      2023-04-01: 42700
+      2024-04-01: 42700
+      2025-04-01: 42700
+  abatement_rate:
+    description: Rate at which FTC is reduced above threshold
+    metadata:
+      unit: /1
+    values:
+      2022-04-01: 0.25  # 25 cents for every dollar above threshold
+      2023-04-01: 0.25
+      2024-04-01: 0.25
+      2025-04-01: 0.25

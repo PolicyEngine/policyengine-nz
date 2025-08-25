@@ -1,0 +1,29 @@
+title: PolicyEngine New Zealand
+author: PolicyEngine
+logo: policyengine_logo.png
+copyright: "2024, PolicyEngine"
+
+format: jb-book
+root: index
+chapters:
+- file: installation
+- file: quickstart
+- file: tax-programs
+- file: benefit-programs  
+- file: developer-guide
+- file: api_reference
+
+repository:
+  url: https://github.com/PolicyEngine/policyengine-nz
+  branch: main
+
+html:
+  use_issues_button: true
+  use_repository_button: true
+  use_edit_page_button: true
+  
+sphinx:
+  config:
+    html_theme_options:
+      repository_url: https://github.com/PolicyEngine/policyengine-nz
+      use_repository_button: true
