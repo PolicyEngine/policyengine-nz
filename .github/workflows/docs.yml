@@ -35,14 +35,12 @@ jobs:
         run: |
           uv pip install --system -e .[dev]
       
-      - name: Build documentation with MyST
+      - name: Build documentation
         run: |
           cd docs
-          uv run myst build --html
+          uv run jupyter book build .
           # Add .nojekyll to prevent Jekyll processing
           touch _build/html/.nojekyll
-          # Kill any remaining MyST server processes
-          pkill -f "myst" || true
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
