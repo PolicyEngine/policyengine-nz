@@ -37,7 +37,7 @@ jobs:
       
       - name: Build documentation with MyST
         run: |
-          uv run myst build docs -o docs/_build
+          cd docs && uv run myst build --html
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -45,7 +45,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./docs/_build
+          path: ./docs/_build/html
 
   deploy:
     environment:
