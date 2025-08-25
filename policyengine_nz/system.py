@@ -24,7 +24,7 @@ class NewZealandTaxBenefitSystem(TaxBenefitSystem):
     """
     
     entities = entities
-    # parameters_dir = COUNTRY_DIR / "parameters"  # Temporarily disabled
+    parameters_dir = COUNTRY_DIR / "parameters"
     variables_dir = COUNTRY_DIR / "variables"
     auto_carry_over_input_variables = True
     basic_inputs = [
@@ -49,9 +49,15 @@ class NewZealandTaxBenefitSystem(TaxBenefitSystem):
         Args:
             reform: Optional reform to apply to the baseline system
         """
-        # Initialize without parameters first to test basic system
-        from policyengine_core.taxbenefitsystems import TaxBenefitSystem
-        TaxBenefitSystem.__init__(self, entities)
+        super().__init__(entities)
+        
+        # Add all parameters
+        if self.parameters_dir is not None and self.parameters_dir.exists():
+            self.load_parameters(self.parameters_dir)
+        
+        # Add all variables
+        if self.variables_dir is not None and self.variables_dir.exists():
+            self.add_variables_from_directory(self.variables_dir)
         
         # Apply reform if provided
         if reform is not None:
