@@ -4,10 +4,9 @@
     people:
       person:
         age: 30
-        employment_income: 30000
+        employment_income: 30_000
   output:
-    income_tax:
-      2025: 2520  # $15,600 at 0% + $14,400 at 17.5% = $2,520
+    income_tax: 2_520  # $15,600 at 0% + $14,400 at 17.5% = $2,520
 
 - name: Income tax on $60,000 employment income (2025)
   period: 2025
@@ -15,10 +14,9 @@
     people:
       person:
         age: 30
-        employment_income: 60000
+        employment_income: 60_000
   output:
-    income_tax:
-      2025: 8007.5  # $15,600 at 0% + $37,900 at 17.5% + $6,500 at 30% = $8,007.50
+    income_tax: 8_007.5  # $15,600 at 0% + $37,900 at 17.5% + $6,500 at 30% = $8,007.50
 
 - name: Income tax on $100,000 employment income (2025)
   period: 2025
@@ -26,10 +24,9 @@
     people:
       person:
         age: 30
-        employment_income: 100000
+        employment_income: 100_000
   output:
-    income_tax:
-      2025: 19557.5  # Complex calculation across multiple brackets
+    income_tax: 19_557.5  # Complex calculation across multiple brackets
 
 - name: Income tax on $200,000 employment income (2025)
   period: 2025
@@ -37,7 +34,6 @@
     people:
       person:
         age: 30
-        employment_income: 200000
+        employment_income: 200_000
   output:
-    income_tax:
-      2025: 53157.5  # Including top 33% and 39% brackets
+    income_tax: 53_157.5  # Including top 33% and 39% brackets

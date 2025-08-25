@@ -4,7 +4,7 @@
     people:
       parent:
         age: 35
-        employment_income: 30000
+        employment_income: 30_000
       child1:
         age: 8
       child2:
@@ -14,8 +14,7 @@
         parents: [parent]
         children: [child1, child2]
   output:
-    family_tax_credit:
-      2025: 13104  # 2 children * $6,552 = $13,104 (no abatement)
+    family_tax_credit: 13_104  # 2 children * $6,552 = $13,104 (no abatement)
 
 - name: Family Tax Credit for family with 2 children, high income (with abatement)
   period: 2025
@@ -23,7 +22,7 @@
     people:
       parent:
         age: 35
-        employment_income: 80000
+        employment_income: 80_000
       child1:
         age: 8
       child2:
@@ -33,8 +32,7 @@
         parents: [parent]
         children: [child1, child2]
   output:
-    family_tax_credit:
-      2025: 3779  # Base $13,104 - abatement of $9,325 = $3,779
+    family_tax_credit: 3_779  # Base $13,104 - abatement of $9,325 = $3,779
 
 - name: In-Work Tax Credit for working family with 2 children
   period: 2025
@@ -42,7 +40,7 @@
     people:
       parent:
         age: 35
-        employment_income: 30000
+        employment_income: 30_000
         work_hours_per_week: 25
       child1:
         age: 8
@@ -53,8 +51,7 @@
         parents: [parent]
         children: [child1, child2]
   output:
-    in_work_tax_credit:
-      2025: 5304  # Base rate for families with 1-3 children
+    in_work_tax_credit: 5_304  # Base rate for families with 1-3 children
 
 - name: Best Start for family with 1 young child
   period: 2025
@@ -62,7 +59,7 @@
     people:
       parent:
         age: 30
-        employment_income: 50000
+        employment_income: 50_000
       baby:
         age: 1
         child_age_months: 12
@@ -71,5 +68,4 @@
         parents: [parent]
         children: [baby]
   output:
-    best_start:
-      2025: 3796  # $73 per week * 52 weeks = $3,796
+    best_start: 3_796  # $73 per week * 52 weeks = $3,796
