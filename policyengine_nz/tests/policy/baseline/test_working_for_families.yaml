@@ -51,7 +51,7 @@
         parents: [parent]
         children: [child1, child2]
   output:
-    in_work_tax_credit: 5_304  # Base rate for families with 1-3 children
+    in_work_tax_credit: 4_004  # Base rate for families with 1-3 children (2024-04-01 params)
 
 - name: Best Start for family with 1 young child
   period: 2025

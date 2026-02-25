@@ -38,7 +38,7 @@ jobs:
     
     - name: Run policy tests
       run: |
-        uv run python -m policyengine_test policyengine_nz/tests/policy --country_package policyengine_nz
+        uv run pytest policyengine_nz/tests/policy -xvs
     
     - name: Test package installation
       run: |
