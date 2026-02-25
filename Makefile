@@ -32,7 +32,8 @@ build:  ## Build package
 	uv build
 
 changelog:  ## Update changelog
-	uv run yaml-changelog-to-markdown changelog.yaml CHANGELOG.md
+	python .github/bump_version.py
+	towncrier build --yes --version $$(python -c "import re; print(re.search(r'version = \"(.+?)\"', open('pyproject.toml').read()).group(1))")
 
 release:  ## Prepare release
 	@echo "Preparing release..."
