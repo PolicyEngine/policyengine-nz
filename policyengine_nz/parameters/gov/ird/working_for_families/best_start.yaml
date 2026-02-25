@@ -18,15 +18,8 @@ rates:
       2024-04-01: 73    # $73 per week (up to $3,796 per year)
       2025-04-01: 73    # Estimated to remain same
 eligibility:
-  birth_cutoff:
-    description: Children born on or after this date are eligible
-    metadata:
-      unit: date
-    values:
-      2022-04-01: "2018-07-01"
-      2023-04-01: "2018-07-01"
-      2024-04-01: "2018-07-01"
-      2025-04-01: "2018-07-01"
+  # Note: Children born on or after 2018-07-01 are eligible for Best Start.
+  # This is handled in the variable formula, not as a parameter.
   max_age_months:
     description: Maximum age in months for Best Start eligibility
     metadata:
