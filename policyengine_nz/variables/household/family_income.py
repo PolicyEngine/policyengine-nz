@@ -8,10 +8,10 @@ class family_income(Variable):
     entity = Family
     definition_period = YEAR
     label = "Family income"
-    documentation = "Combined annual income of all family members for Working for Families purposes"
-    reference = (
-        "https://www.ird.govt.nz/working-for-families/eligibility/income-test"
+    documentation = (
+        "Combined annual income of all family members for Working for Families purposes"
     )
+    reference = "https://www.ird.govt.nz/working-for-families/eligibility/income-test"
     unit = NZD
 
     def formula(family, period, parameters):

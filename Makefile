@@ -12,11 +12,11 @@ test:  ## Run all tests
 	uv run pytest -xvs
 	uv run python -m policyengine_test policyengine_nz/tests/policy --country_package policyengine_nz
 
-format:  ## Format code with Black
-	uv run black . -l 79
+format:  ## Format code with ruff
+	uv run ruff format .
 
 lint:  ## Check code formatting
-	uv run black . --check -l 79
+	uv run ruff format --check .
 
 clean:  ## Clean build artifacts
 	rm -rf build/

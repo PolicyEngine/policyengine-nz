@@ -8,12 +8,8 @@ class family_tax_credit(Variable):
     entity = Family
     definition_period = YEAR
     label = "Family Tax Credit"
-    documentation = (
-        "Annual Family Tax Credit payment under Working for Families"
-    )
-    reference = (
-        "https://www.ird.govt.nz/working-for-families/types/family-tax-credit"
-    )
+    documentation = "Annual Family Tax Credit payment under Working for Families"
+    reference = "https://www.ird.govt.nz/working-for-families/types/family-tax-credit"
     unit = NZD
 
     def formula(family, period, parameters):
@@ -23,8 +19,7 @@ class family_tax_credit(Variable):
 
         # Get children by age groups
         children_0_15 = family.sum(
-            family.members("age", period)
-            <= 15 * family.members("is_child", period)
+            family.members("age", period) <= 15 * family.members("is_child", period)
         )
         children_16_18 = family.sum(
             (family.members("age", period) >= 16)
@@ -41,9 +36,7 @@ class family_tax_credit(Variable):
         ).gov.ird.working_for_families.family_tax_credit_income_test.thresholds
 
         # Calculate base FTC entitlement
-        ftc_base = (
-            children_0_15 * p.child_0_15 + children_16_18 * p.child_16_18
-        )
+        ftc_base = children_0_15 * p.child_0_15 + children_16_18 * p.child_16_18
 
         # Apply income test
         full_payment_threshold = income_test.full_payment_threshold
