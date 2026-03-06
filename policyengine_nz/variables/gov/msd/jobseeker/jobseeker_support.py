@@ -9,7 +9,9 @@ class receiving_jobseeker_support(Variable):
     definition_period = YEAR
     label = "Receiving Jobseeker Support"
     documentation = "Whether person is receiving Jobseeker Support benefit"
-    reference = "https://www.workandincome.govt.nz/products/a-z-benefits/jobseeker-support.html"
+    reference = (
+        "https://www.workandincome.govt.nz/products/a-z-benefits/jobseeker-support.html"
+    )
 
 
 class is_sole_parent(Variable):
@@ -35,7 +37,9 @@ class jobseeker_support(Variable):
     definition_period = YEAR
     label = "Jobseeker Support"
     documentation = "Annual Jobseeker Support benefit payment"
-    reference = "https://www.workandincome.govt.nz/products/a-z-benefits/jobseeker-support.html"
+    reference = (
+        "https://www.workandincome.govt.nz/products/a-z-benefits/jobseeker-support.html"
+    )
     unit = NZD
 
     def formula(person, period, parameters):

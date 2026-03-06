@@ -9,7 +9,9 @@ class receiving_nz_super(Variable):
     definition_period = YEAR
     label = "Receiving NZ Superannuation"
     documentation = "Whether person is receiving New Zealand Superannuation"
-    reference = "https://www.workandincome.govt.nz/products/a-z-benefits/nz-superannuation.html"
+    reference = (
+        "https://www.workandincome.govt.nz/products/a-z-benefits/nz-superannuation.html"
+    )
 
 
 class living_alone(Variable):
@@ -17,9 +19,7 @@ class living_alone(Variable):
     entity = Person
     definition_period = YEAR
     label = "Living alone"
-    documentation = (
-        "Whether person is living alone for superannuation rate purposes"
-    )
+    documentation = "Whether person is living alone for superannuation rate purposes"
 
 
 class nz_superannuation(Variable):
@@ -28,7 +28,9 @@ class nz_superannuation(Variable):
     definition_period = YEAR
     label = "New Zealand Superannuation"
     documentation = "Annual New Zealand Superannuation payment"
-    reference = "https://www.workandincome.govt.nz/products/a-z-benefits/nz-superannuation.html"
+    reference = (
+        "https://www.workandincome.govt.nz/products/a-z-benefits/nz-superannuation.html"
+    )
     unit = NZD
 
     def formula(person, period, parameters):
@@ -50,8 +52,7 @@ class nz_superannuation(Variable):
         rate_weekly = select(
             [
                 not_(has_partner) * living_alone,  # Single living alone
-                not_(has_partner)
-                * not_(living_alone),  # Single sharing accommodation
+                not_(has_partner) * not_(living_alone),  # Single sharing accommodation
                 has_partner,  # Married/partnered
             ],
             [

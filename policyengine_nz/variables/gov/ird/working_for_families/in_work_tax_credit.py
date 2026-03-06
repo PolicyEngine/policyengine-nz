@@ -9,9 +9,7 @@ class work_hours_per_week(Variable):
     definition_period = YEAR
     label = "Work hours per week"
     documentation = "Average hours worked per week"
-    reference = (
-        "https://www.ird.govt.nz/working-for-families/types/in-work-tax-credit"
-    )
+    reference = "https://www.ird.govt.nz/working-for-families/types/in-work-tax-credit"
 
 
 class in_work_tax_credit(Variable):
@@ -19,12 +17,8 @@ class in_work_tax_credit(Variable):
     entity = Family
     definition_period = YEAR
     label = "In-Work Tax Credit"
-    documentation = (
-        "Annual In-Work Tax Credit payment under Working for Families"
-    )
-    reference = (
-        "https://www.ird.govt.nz/working-for-families/types/in-work-tax-credit"
-    )
+    documentation = "Annual In-Work Tax Credit payment under Working for Families"
+    reference = "https://www.ird.govt.nz/working-for-families/types/in-work-tax-credit"
     unit = NZD
 
     def formula(family, period, parameters):
@@ -33,9 +27,7 @@ class in_work_tax_credit(Variable):
         num_parents = family.sum(family.members("age", period) >= 18)
 
         # Calculate total work hours for the family
-        total_work_hours = family.sum(
-            family.members("work_hours_per_week", period)
-        )
+        total_work_hours = family.sum(family.members("work_hours_per_week", period))
 
         # Get parameters
         p = parameters(period).gov.ird.working_for_families.in_work_tax_credit

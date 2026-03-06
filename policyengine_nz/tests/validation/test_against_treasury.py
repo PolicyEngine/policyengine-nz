@@ -55,9 +55,9 @@ class TestTreasuryValidation:
             calculated_tax = simulation.calculate("income_tax", "2024")[0]
 
             # Allow small rounding differences
-            assert (
-                abs(calculated_tax - expected_tax) < 1
-            ), f"Income ${income}: expected ${expected_tax}, got ${calculated_tax}"
+            assert abs(calculated_tax - expected_tax) < 1, (
+                f"Income ${income}: expected ${expected_tax}, got ${calculated_tax}"
+            )
 
     def test_working_for_families_scenarios(self):
         """
@@ -102,9 +102,9 @@ class TestTreasuryValidation:
         ftc = simulation.calculate("family_tax_credit", "2024")[0]
 
         # Treasury tool shows approximately these values
-        assert (
-            ftc > 10_000
-        ), "Family Tax Credit should be substantial for low-income family"
+        assert ftc > 10_000, (
+            "Family Tax Credit should be substantial for low-income family"
+        )
 
     def test_effective_marginal_tax_rates(self):
         """
@@ -125,9 +125,7 @@ class TestTreasuryValidation:
         net_base = base_income - tax_base - acc_base
 
         # After additional income
-        situation_new = _make_single_person_situation(
-            base_income + additional_income
-        )
+        situation_new = _make_single_person_situation(base_income + additional_income)
         sim_new = Simulation(
             tax_benefit_system=self.system,
             situation=situation_new,
@@ -141,9 +139,9 @@ class TestTreasuryValidation:
 
         # EMTR at $50k is in the 17.5% tax bracket + 1.39% ACC
         expected_emtr = 0.1889  # 17.5% tax + 1.39% ACC
-        assert (
-            abs(emtr - expected_emtr) < 0.01
-        ), f"EMTR mismatch: expected {expected_emtr:.2%}, got {emtr:.2%}"
+        assert abs(emtr - expected_emtr) < 0.01, (
+            f"EMTR mismatch: expected {expected_emtr:.2%}, got {emtr:.2%}"
+        )
 
     def test_accommodation_supplement_params(self):
         """
@@ -197,9 +195,9 @@ class TestTreasuryValidation:
         )
         # Expected: $68 * 52 = $3,536 per year (2023-04-01 rate at 2024-01-01)
         best_start = simulation.calculate("best_start", "2024")[0]
-        assert (
-            abs(best_start - 3_536) < 100
-        ), f"Best Start should be ~$3,536 for baby, got ${best_start}"
+        assert abs(best_start - 3_536) < 100, (
+            f"Best Start should be ~$3,536 for baby, got ${best_start}"
+        )
 
 
 class TestIRDNumberValidation:
@@ -255,6 +253,6 @@ def test_net_income_calculations(income, expected_net):
     net = income - tax - acc
 
     # Allow 1% margin for rounding differences
-    assert (
-        abs(net - expected_net) < expected_net * 0.01
-    ), f"Net income for ${income}: expected ${expected_net}, got ${net}"
+    assert abs(net - expected_net) < expected_net * 0.01, (
+        f"Net income for ${income}: expected ${expected_net}, got ${net}"
+    )
